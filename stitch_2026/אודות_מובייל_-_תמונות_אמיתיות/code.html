@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+
+<html class="dark" dir="rtl" lang="he"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#137fec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 min-h-screen flex flex-col">
+<!-- Header Navigation -->
+<header class="sticky top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-primary/10 px-4 py-4 flex items-center justify-between">
+<button class="flex items-center justify-center p-2 rounded-full hover:bg-primary/10 transition-colors">
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+<h1 class="text-xl font-bold tracking-tight text-primary">CAPS 2026</h1>
+<button class="flex items-center justify-center p-2 rounded-full hover:bg-primary/10 transition-colors">
+<span class="material-symbols-outlined">search</span>
+</button>
+</header>
+<main class="flex-1 overflow-y-auto pb-24">
+<!-- Hero Section -->
+<section class="relative h-[400px] w-full overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark via-background-dark/40 to-transparent z-10"></div>
+<img alt="Urban lifestyle cap" class="absolute inset-0 w-full h-full object-cover" data-alt="Modern urban person wearing a stylish premium street cap" src="{{DATA:IMAGE:IMAGE_22}}"/>
+<div class="absolute bottom-0 right-0 p-6 z-20 w-full">
+<h2 class="text-4xl font-bold mb-2 tracking-tighter">הסיפור שלנו</h2>
+<p class="text-slate-300 max-w-md leading-relaxed">
+                    CAPS 2026 היא המותג המוביל לכובעי פרימיום המשלבים סטייל רחוב ואיכות ללא פשרות. המשימה שלנו היא להגדיר מחדש את המראה האורבני שלך.
+                </p>
+</div>
+</section>
+<!-- Brand Values -->
+<section class="px-4 py-10">
+<div class="grid grid-cols-3 gap-4">
+<div class="flex flex-col items-center text-center p-4 rounded-xl bg-primary/5 border border-primary/10">
+<span class="material-symbols-outlined text-primary mb-2 text-3xl">style</span>
+<span class="font-bold text-sm">STYL</span>
+<span class="text-[10px] opacity-60">סטייל אישי</span>
+</div>
+<div class="flex flex-col items-center text-center p-4 rounded-xl bg-primary/5 border border-primary/10">
+<span class="material-symbols-outlined text-primary mb-2 text-3xl">trending_up</span>
+<span class="font-bold text-sm">TRND</span>
+<span class="text-[10px] opacity-60">מובילי טרנדים</span>
+</div>
+<div class="flex flex-col items-center text-center p-4 rounded-xl bg-primary/5 border border-primary/10">
+<span class="material-symbols-outlined text-primary mb-2 text-3xl">verified</span>
+<span class="font-bold text-sm">QUAL</span>
+<span class="text-[10px] opacity-60">איכות ללא פשרות</span>
+</div>
+</div>
+</section>
+<!-- Why Choose Us -->
+<section class="px-6 py-8 bg-slate-100 dark:bg-slate-900/50 rounded-xl mx-4">
+<h3 class="text-2xl font-bold mb-8 text-center">למה לבחור בנו?</h3>
+<div class="space-y-6">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-white">local_shipping</span>
+</div>
+<div>
+<h4 class="font-bold text-lg">משלוח מהיר</h4>
+<p class="text-sm text-slate-500 dark:text-slate-400">אנחנו יודעים שאתה מחכה לכובע החדש שלך. משלוחים עד הבית במהירות שיא.</p>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-white">local_fire_department</span>
+</div>
+<div>
+<h4 class="font-bold text-lg">סטייל לוהט</h4>
+<p class="text-sm text-slate-500 dark:text-slate-400">העיצובים הכי חמים היישר מבירות האופנה העולמיות.</p>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-white">workspace_premium</span>
+</div>
+<div>
+<h4 class="font-bold text-lg">איכות פרימיום</h4>
+<p class="text-sm text-slate-500 dark:text-slate-400">בדים איכותיים, תפירה מדויקת ועמידות לאורך זמן.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Lifestyle Gallery -->
+<section class="py-10">
+<div class="px-4 flex justify-between items-end mb-6">
+<h3 class="text-2xl font-bold">הלייף סטייל שלנו</h3>
+<span class="text-primary text-sm font-medium">עקבו אחרינו</span>
+</div>
+<div class="flex gap-4 overflow-x-auto px-4 no-scrollbar pb-4">
+<div class="min-w-[200px] h-[300px] rounded-xl overflow-hidden shrink-0 relative">
+<img alt="Cap 1" class="w-full h-full object-cover" data-alt="Black premium baseball cap in urban setting" src="{{DATA:IMAGE:IMAGE_24}}"/>
+</div>
+<div class="min-w-[200px] h-[300px] rounded-xl overflow-hidden shrink-0 relative">
+<img alt="Cap 2" class="w-full h-full object-cover" data-alt="Person wearing stylish cap walking in the city" src="{{DATA:IMAGE:IMAGE_23}}"/>
+</div>
+<div class="min-w-[200px] h-[300px] rounded-xl overflow-hidden shrink-0 relative">
+<img alt="Cap 3" class="w-full h-full object-cover" data-alt="Blue cap displayed against modern architectural background" src="{{DATA:IMAGE:IMAGE_22}}"/>
+</div>
+</div>
+</section>
+<!-- Community Section -->
+<section class="px-4 py-8 text-center">
+<div class="bg-primary/10 border border-primary/20 rounded-xl p-8">
+<h3 class="text-2xl font-bold mb-4">הצטרפו לקהילה</h3>
+<p class="text-slate-400 mb-6 text-sm">תהיו הראשונים לדעת על קולקציות חדשות, מבצעים ואירועים בלעדיים.</p>
+<div class="flex flex-col gap-3">
+<a class="flex items-center justify-center gap-2 bg-slate-900 dark:bg-slate-100 text-slate-100 dark:text-slate-900 py-3 rounded-full font-bold transition-transform active:scale-95" href="#">
+<span class="material-symbols-outlined">photo_camera</span>
+                        אינסטגרם @caps2026_store
+                    </a>
+<a class="flex items-center justify-center gap-2 bg-[#ff0050] text-white py-3 rounded-full font-bold transition-transform active:scale-95" href="#">
+<span class="material-symbols-outlined">videocam</span>
+                        טיקטוק @caps2026
+                    </a>
+</div>
+</div>
+</section>
+</main>
+<!-- Bottom Navigation Bar -->
+<nav class="fixed bottom-0 w-full z-50 bg-[#1c2127] border-t border-[#283039] px-4 pb-6 pt-2">
+<div class="flex items-center justify-between">
+<a class="flex flex-col items-center gap-1 text-[#9dabb9]" href="#">
+<span class="material-symbols-outlined">home</span>
+<p class="text-xs font-medium">בית</p>
+</a>
+<a class="flex flex-col items-center gap-1 text-[#9dabb9]" href="#">
+<span class="material-symbols-outlined">shopping_bag</span>
+<p class="text-xs font-medium">חנות</p>
+</a>
+<a class="flex flex-col items-center gap-1 text-primary" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">info</span>
+<p class="text-xs font-bold">אודות</p>
+</a>
+<a class="flex flex-col items-center gap-1 text-[#9dabb9]" href="#">
+<span class="material-symbols-outlined">person</span>
+<p class="text-xs font-medium">פרופיל</p>
+</a>
+</div>
+</nav>
+<style>
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</body></html>
