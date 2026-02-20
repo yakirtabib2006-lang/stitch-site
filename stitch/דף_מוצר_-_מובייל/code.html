@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+
+<html class="dark" dir="rtl" lang="he"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#137fec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#0a0c10",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Space Grotesk', sans-serif;
+            -webkit-tap-highlight-color: transparent;
+        }
+        .neon-glow {
+            box-shadow: 0 0 15px rgba(19, 127, 236, 0.4);
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display">
+<!-- Top Navigation Bar -->
+<nav class="sticky top-0 z-50 flex items-center justify-between px-6 py-4 bg-background-dark/80 backdrop-blur-md border-b border-primary/10">
+<div class="flex items-center gap-4">
+<button class="flex items-center justify-center size-10 rounded-full bg-slate-800/50 text-white">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+<div class="text-xl font-bold tracking-tighter text-white">
+            TRENDY <span class="text-primary">2026</span>
+</div>
+<div class="relative flex items-center justify-center size-10 rounded-full bg-slate-800/50 text-white">
+<span class="material-symbols-outlined">shopping_cart</span>
+<span class="absolute -top-1 -right-1 flex size-5 items-center justify-center rounded-full bg-primary text-[10px] font-bold">2</span>
+</div>
+</nav>
+<main class="pb-32">
+<!-- Product Gallery -->
+<section class="relative px-4 pt-4">
+<div class="aspect-[4/5] w-full overflow-hidden rounded-xl bg-slate-900 relative">
+<img class="h-full w-full object-cover" data-alt="Modern neon blue snapback hat on dark background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBP8VpYSLm7gnYil3JgzgdsGt5JPGOCgPXUeEf2hCfxSpaRSjXYfUYNEUkbeSrEcPSp-3x9u0Jx-6YwD8YIEYkYPYIu2xOfYeWWluuyCdLC5pyxYw3opHc2AXOl0LV9pUM9mms1MnintDMWHvNLMyZsivrxLeZQXrKEq1POyPnPi91IKn5ikGLQ867mnRumkoajE8yrNrczJgrSjrG1tVipHAAqxkOfgPTupVOIOiZhRrN2Yo0sItDS3JZRg6zxOu6ECFsUoxxu14Y"/>
+<!-- Pagination Dots -->
+<div class="absolute bottom-6 left-0 right-0 flex justify-center gap-2">
+<div class="h-1.5 w-8 rounded-full bg-primary"></div>
+<div class="h-1.5 w-2 rounded-full bg-white/30"></div>
+<div class="h-1.5 w-2 rounded-full bg-white/30"></div>
+<div class="h-1.5 w-2 rounded-full bg-white/30"></div>
+</div>
+</div>
+</section>
+<!-- Product Details -->
+<section class="px-6 pt-8">
+<div class="flex items-center justify-between mb-2">
+<span class="px-3 py-1 text-xs font-bold tracking-widest uppercase rounded-full bg-primary/20 text-primary">קולקציית 2026</span>
+<div class="flex items-center gap-1 text-yellow-400">
+<span class="material-symbols-outlined !text-lg">star</span>
+<span class="text-sm font-bold text-slate-100">4.9</span>
+<span class="text-xs text-slate-400 font-medium">(124 ביקורות)</span>
+</div>
+</div>
+<h1 class="text-3xl font-bold leading-tight mb-2">כובע ניאון Snapback 2026</h1>
+<div class="flex items-baseline gap-3 mb-6">
+<span class="text-4xl font-bold text-primary">₪89</span>
+<span class="text-lg text-slate-500 line-through">₪129</span>
+</div>
+<!-- Marketing Blurb -->
+<p class="text-slate-400 leading-relaxed mb-8">
+                הסטייל שמשנה את חוקי המשחק. עם תאורת ניאון פנימית ועיצוב עתידני, הכובע הזה הולך להקפיץ לך את כל הסטוריז והטיקטוקים לרמה אחרת. אל תישאר מאחור.
+            </p>
+<!-- Color Selector -->
+<div class="mb-8">
+<h3 class="text-sm font-bold uppercase tracking-wider text-slate-500 mb-4">בחר צבע</h3>
+<div class="flex gap-4">
+<button class="size-10 rounded-full bg-purple-600 ring-2 ring-offset-4 ring-offset-background-dark ring-transparent"></button>
+<button class="size-10 rounded-full bg-primary ring-2 ring-offset-4 ring-offset-background-dark ring-primary"></button>
+<button class="size-10 rounded-full bg-slate-900 border border-slate-700 ring-2 ring-offset-4 ring-offset-background-dark ring-transparent"></button>
+</div>
+</div>
+<!-- Size Selector -->
+<div class="mb-10">
+<div class="flex justify-between mb-4">
+<h3 class="text-sm font-bold uppercase tracking-wider text-slate-500">בחר מידה</h3>
+<button class="text-xs text-primary underline">מדריך מידות</button>
+</div>
+<div class="flex gap-3">
+<button class="flex-1 py-3 rounded-xl border border-slate-800 bg-slate-900/50 font-bold text-slate-300">S</button>
+<button class="flex-1 py-3 rounded-xl border-2 border-primary bg-primary/10 font-bold text-primary">M</button>
+<button class="flex-1 py-3 rounded-xl border border-slate-800 bg-slate-900/50 font-bold text-slate-300">L</button>
+</div>
+</div>
+</section>
+<!-- Customer Reviews -->
+<section class="px-6 py-8 border-t border-slate-800/50">
+<h2 class="text-xl font-bold mb-6">מה אומרים עלינו?</h2>
+<div class="space-y-4">
+<div class="p-4 rounded-xl bg-slate-900/40 border border-slate-800">
+<div class="flex justify-between mb-2">
+<span class="font-bold">נועם ל.</span>
+<div class="flex text-primary">
+<span class="material-symbols-outlined !text-xs">star</span>
+<span class="material-symbols-outlined !text-xs">star</span>
+<span class="material-symbols-outlined !text-xs">star</span>
+<span class="material-symbols-outlined !text-xs">star</span>
+<span class="material-symbols-outlined !text-xs">star</span>
+</div>
+</div>
+<p class="text-sm text-slate-400">הכובע הכי יפה שקניתי בחיים! האיכות פשוט מטורפת והוא נראה בדיוק כמו בתמונות.</p>
+</div>
+<div class="p-4 rounded-xl bg-slate-900/40 border border-slate-800">
+<div class="flex justify-between mb-2">
+<span class="font-bold">דניאל כ.</span>
+<div class="flex text-primary">
+<span class="material-symbols-outlined !text-xs">star</span>
+<span class="material-symbols-outlined !text-xs">star</span>
+<span class="material-symbols-outlined !text-xs">star</span>
+<span class="material-symbols-outlined !text-xs">star</span>
+<span class="material-symbols-outlined !text-xs">star</span>
+</div>
+</div>
+<p class="text-sm text-slate-400">משלוח מהיר בטירוף, הגיע תוך יומיים. הניאון נראה מדהים בלילה.</p>
+</div>
+</div>
+</section>
+<!-- Related Products -->
+<section class="py-8">
+<h2 class="px-6 text-xl font-bold mb-6">אולי יעניין אותך גם</h2>
+<div class="flex overflow-x-auto gap-4 px-6 hide-scrollbar">
+<div class="min-w-[160px] group">
+<div class="aspect-square rounded-xl bg-slate-900 mb-3 overflow-hidden">
+<img class="h-full w-full object-cover" data-alt="Classic black baseball cap" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1MnCg6lwDFkp6D9qYq0P4Wg1a6KPQe29yT6UXGRrkDUY_J9gM-O0YgTqBsf1TWvFK15eqC_9OXTrR5rKPOE2jzEIteTAZpZnvpVgLKVOaUMpB8ka7-HTY3pYkUaFb10Wkm7-XP83GDJ-VkzheU5gk2WN3pEK5nsBz06Yhv14eNbfeTS91swk5Bxa9kx3VyzDX-84vlsHQGfZ9q6rXCMuTlTh6mHsfslGCqfTXFtMBbFZ9KoFGKO3M6PBlC-kERDkvjBBv8oE69hE"/>
+</div>
+<h4 class="text-sm font-bold truncate">כובע קלאסי שחור</h4>
+<p class="text-primary font-bold">₪69</p>
+</div>
+<div class="min-w-[160px] group">
+<div class="aspect-square rounded-xl bg-slate-900 mb-3 overflow-hidden">
+<img class="h-full w-full object-cover" data-alt="Futuristic bucket hat" src="https://lh3.googleusercontent.com/aida-public/AB6AXuArx7yE8CpgTg_B6DUyMRAN1cVpGo_NQK1-rQJl1BiOvT5wAny1lJj9lUuattEUNnhfBrRbfu6SkY2CyK9AldfDZj4xTyDZgJBR57LYH-okRUS2x3Ks7Nr0a8SlWqujtLvZN0Wv2gKEc7Q_Ybg-7ndd5viQ51eDz0sk4DLA14eJ7LyofwmsEGq7eMGuPpc-7VPrpg8R5tP0_WjJMd6NmMyTvpcFy4MlTyyNyoG4IPEq_Et2mAXGYE5kVPlSMlV0f6Ghm4GTk26hXsA"/>
+</div>
+<h4 class="text-sm font-bold truncate">באקט עתידני</h4>
+<p class="text-primary font-bold">₪99</p>
+</div>
+<div class="min-w-[160px] group">
+<div class="aspect-square rounded-xl bg-slate-900 mb-3 overflow-hidden">
+<img class="h-full w-full object-cover" data-alt="Neon green beanie" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGppGjAbomzO_kygnGPViUKZNSq130-NcgbBsCCZOapv1LGITInFor45uibvKHlnGMLofu20A5YqDZMHLdNI-YkhctWJ1XksDktLVPEgM70ud8vrcc4MMGbFGryKPgvHKf4BchXd-H8lrI1Y2NPYNl3kwcw5Auvs7O4QFnVEroxvDEPUzb-jTTjJ4WNLsfK3wyBzfppXcjChV95jvlWn4CCtQbZP1kKqmFVUiyfdsMF7oWk28TjCUB7cyBlNWJr1mq30piTa09ja0"/>
+</div>
+<h4 class="text-sm font-bold truncate">ביני ניאון ירוק</h4>
+<p class="text-primary font-bold">₪55</p>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="px-6 py-12 bg-slate-900/30 border-t border-slate-800">
+<div class="grid grid-cols-2 gap-8 mb-10">
+<div class="space-y-3">
+<h4 class="font-bold text-white">מידע נוסף</h4>
+<ul class="space-y-2 text-sm text-slate-400">
+<li>תקנון אתר</li>
+<li>מדיניות משלוחים</li>
+<li>החזרות והחלפות</li>
+</ul>
+</div>
+<div class="space-y-3 text-left">
+<h4 class="font-bold text-white text-right">צור קשר</h4>
+<ul class="space-y-2 text-sm text-slate-400 text-right">
+<li>שירות לקוחות</li>
+<li>וואטסאפ</li>
+<li>שאלות נפוצות</li>
+</ul>
+</div>
+</div>
+<div class="flex justify-center gap-6 mb-8">
+<div class="size-12 rounded-full bg-slate-800 flex items-center justify-center text-white">
+<svg class="size-6 fill-current" viewbox="0 0 24 24"><path d="M12.525.02c1.31-.032 2.617-.023 3.91-.006.777.01 1.547.017 2.27.12 1.53.17 3.03.58 4.16 1.57 1.15 1.05 1.62 2.5 1.84 4.03.19 1.35.24 2.8.25 4.24.01 1.84-.01 3.71-.02 5.47-.01 2.86-.51 5.02-2.04 6.81-1.51 1.78-4.12 2.31-6.62 2.5-1.12.08-2.29.09-3.51.09h-1.54c-1.22 0-2.39-.01-3.51-.09-2.5-.19-5.11-.72-6.62-2.5-1.53-1.79-2.03-3.95-2.04-6.81-.01-1.76-.03-3.63-.02-5.47.01-1.44.06-2.89.25-4.24.22-1.53.69-2.98 1.84-4.03C2.315.71 3.815.3 5.345.13c.723-.103 1.493-.11 2.27-.12 1.293-.017 2.6-.026 3.91-.006zM12 18a6 6 0 1 0 0-12 6 6 0 0 0 0 12zm0-2a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"></path></svg>
+</div>
+<div class="size-12 rounded-full bg-slate-800 flex items-center justify-center text-white">
+<svg class="size-6 fill-current" viewbox="0 0 24 24"><path d="M19.589 6.686a4.793 4.793 0 0 1-3.77-4.245V2h-3.445v13.672a2.896 2.896 0 0 1-5.201 1.743l-.002-.001.002.001a2.895 2.895 0 0 1 3.183-4.51v-3.5a6.329 6.329 0 0 0-5.394 10.692 6.33 6.33 0 0 0 10.857-4.424V8.617a8.185 8.185 0 0 0 4.773 1.565V6.686z"></path></svg>
+</div>
+</div>
+<p class="text-center text-xs text-slate-500">© 2026 TRENDY HATS ISRAEL. כל הזכויות שמורות.</p>
+</footer>
+</main>
+<!-- Sticky Bottom Bar -->
+<div class="fixed bottom-0 left-0 right-0 z-50 p-4 bg-background-dark/95 border-t border-slate-800/50 backdrop-blur-lg">
+<div class="flex gap-4 max-w-lg mx-auto">
+<button class="flex items-center justify-center size-14 rounded-xl border-2 border-slate-800 text-slate-100">
+<span class="material-symbols-outlined">favorite</span>
+</button>
+<button class="flex-1 bg-primary text-white font-bold text-lg rounded-xl neon-glow flex items-center justify-center gap-2">
+<span class="material-symbols-outlined">add_shopping_cart</span>
+<span>הוספה לסל</span>
+</button>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+
+<html class="dark" dir="rtl" lang="he"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Noto+Sans+Hebrew:wght@300;400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#137fec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "Noto Sans Hebrew", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Space Grotesk', 'Noto Sans Hebrew', sans-serif;
+        }
+        .neon-glow {
+            box-shadow: 0 0 15px rgba(19, 127, 236, 0.4);
+        }
+        .neon-border {
+            border: 1px solid rgba(19, 127, 236, 0.3);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 min-h-screen flex flex-col">
+<!-- Top Navigation -->
+<nav class="flex items-center justify-between p-4 border-b border-slate-200 dark:border-slate-800 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md sticky top-0 z-50">
+<div class="w-10 h-10 flex items-center justify-center rounded-full bg-slate-100 dark:bg-slate-800">
+<span class="material-symbols-outlined text-slate-900 dark:text-white">close</span>
+</div>
+<h1 class="text-xl font-bold tracking-tighter text-primary">CAPS 2026</h1>
+<div class="w-10 h-10 flex items-center justify-center">
+<span class="material-symbols-outlined text-slate-900 dark:text-white">shopping_bag</span>
+</div>
+</nav>
+<main class="flex-1 overflow-y-auto pb-24">
+<!-- Success Header -->
+<section class="flex flex-col items-center py-10 px-6 text-center">
+<div class="relative mb-6">
+<div class="absolute inset-0 bg-primary/20 blur-2xl rounded-full"></div>
+<div class="relative w-24 h-24 rounded-full bg-primary flex items-center justify-center shadow-[0_0_30px_rgba(19,127,236,0.5)]">
+<span class="material-symbols-outlined text-white text-5xl font-bold">check</span>
+</div>
+</div>
+<h2 class="text-3xl font-bold mb-2">תודה על ההזמנה שלך!</h2>
+<p class="text-slate-500 dark:text-slate-400 text-lg">ההזמנה <span class="text-primary font-mono">#12345</span> התקבלה ויוצאת לדרך.</p>
+</section>
+<!-- Order Summary Card -->
+<section class="px-6 mb-8">
+<div class="bg-slate-100 dark:bg-slate-800/50 rounded-xl p-6 neon-border">
+<div class="flex justify-between items-center mb-4 border-b border-slate-200 dark:border-slate-700 pb-4">
+<span class="text-slate-500 dark:text-slate-400">סה"כ לתשלום</span>
+<span class="text-2xl font-bold text-primary">₪218</span>
+</div>
+<div class="space-y-4">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary mt-1">local_shipping</span>
+<div>
+<p class="font-bold">פרטי משלוח</p>
+<p class="text-sm text-slate-500 dark:text-slate-400">ישראל ישראלי</p>
+<p class="text-sm text-slate-500 dark:text-slate-400">רחוב הירקון 12, תל אביב</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Action Buttons -->
+<section class="px-6 flex flex-col gap-4 mb-10">
+<button class="w-full bg-primary text-white font-bold py-4 rounded-full shadow-lg shadow-primary/30 flex items-center justify-center gap-2">
+<span class="material-symbols-outlined">track_changes</span>
+                עקוב אחר משלוח
+            </button>
+<button class="w-full border-2 border-slate-200 dark:border-slate-700 text-slate-900 dark:text-white font-bold py-4 rounded-full flex items-center justify-center gap-2">
+<span class="material-symbols-outlined">storefront</span>
+                חזרה לחנות
+            </button>
+</section>
+<!-- Social Media Section -->
+<section class="px-6 mb-12">
+<div class="bg-gradient-to-br from-primary/10 to-transparent p-6 rounded-xl border border-primary/20 text-center">
+<h3 class="text-xl font-bold mb-2">הצטרפו לשבט</h3>
+<p class="text-sm text-slate-500 dark:text-slate-400 mb-4">תייגו אותנו ב-TikTok וב-Instagram וקבלו הזדמנות להופיע אצלנו!</p>
+<div class="flex justify-center gap-4">
+<div class="flex items-center gap-2 bg-slate-900 text-white px-4 py-2 rounded-full text-sm font-bold">
+<span>@CAPS2026</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Recommendations Section -->
+<section class="px-6">
+<h3 class="text-xl font-bold mb-6">אולי תאהבו גם...</h3>
+<div class="grid grid-cols-2 gap-4">
+<div class="flex flex-col gap-2">
+<div class="aspect-square bg-slate-100 dark:bg-slate-800 rounded-xl overflow-hidden relative group">
+<img class="w-full h-full object-cover" data-alt="Black modern baseball cap with neon embroidery" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCtOBjG9uEjml9OUBkWvkWc4ebWGGpSmaYITQmtlqyoSu8COYPR_-F3qaeA6k6YSl8NVrcAWZk86CG0NsVnRH0x18eDt47HiCatp2vA-WAYOl5F-Yfizot3Y9m1TBD6IdnUm7xV2G8gicsLaYC7Ps9JWSJS-bBh1SVay9OAPZpmYZUBxHJ-tCtJvEEdLEKikIBYAvBREj9JYFW0O4fsCYj8jxyQtjNkXAkevt4DJvpoBzQPcwu6SGQlD191hYzXC-HGRb_lXml2rC4"/>
+<button class="absolute bottom-2 left-2 bg-white/90 dark:bg-slate-900/90 p-2 rounded-full shadow-md">
+<span class="material-symbols-outlined text-primary">add_shopping_cart</span>
+</button>
+</div>
+<p class="font-bold text-sm">כובע Neo Black</p>
+<p class="text-primary font-bold text-sm">₪89</p>
+</div>
+<div class="flex flex-col gap-2">
+<div class="aspect-square bg-slate-100 dark:bg-slate-800 rounded-xl overflow-hidden relative group">
+<img class="w-full h-full object-cover" data-alt="Blue streetwear cap with minimal logo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAtzi-bJm-CjGfdFYqZfnu0Xnvb4jZjwWNPKr7NTN-VVtQEiQJY4nN8JkSSEQ32z7bg6rkfXNfQg6LqXNbA02-z8DhobAymISBrsnce6KQn_E4sXXf7Yi9TDSthgqcxNTGka8Isgpv6_ZuvHwMadusHoTBBYvJvIC_rhAmePbdwXodrX0HOt1GQ-GpsRk1Hnav5BS9qU7EMiw_C6gT6ETapGHYctHWRwn-p0yyh_-gcfmT1GEMXD5BVUWU_rRIdIm4CahFwpdIyFig"/>
+<button class="absolute bottom-2 left-2 bg-white/90 dark:bg-slate-900/90 p-2 rounded-full shadow-md">
+<span class="material-symbols-outlined text-primary">add_shopping_cart</span>
+</button>
+</div>
+<p class="font-bold text-sm">כובע Electric Blue</p>
+<p class="text-primary font-bold text-sm">₪109</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Bottom Navigation Bar Component -->
+<div class="fixed bottom-0 left-0 right-0 z-50">
+<div class="flex gap-2 border-t border-slate-200 dark:border-slate-800 bg-background-light dark:bg-background-dark px-4 pb-6 pt-2">
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-slate-400 dark:text-[#9dabb9]" href="#">
+<div class="flex h-8 items-center justify-center">
+<span class="material-symbols-outlined">home</span>
+</div>
+<p class="text-xs font-medium leading-normal tracking-[0.015em]">בית</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-primary" href="#">
+<div class="flex h-8 items-center justify-center">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1">storefront</span>
+</div>
+<p class="text-xs font-medium leading-normal tracking-[0.015em]">חנות</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-slate-400 dark:text-[#9dabb9]" href="#">
+<div class="flex h-8 items-center justify-center">
+<span class="material-symbols-outlined">search</span>
+</div>
+<p class="text-xs font-medium leading-normal tracking-[0.015em]">חיפוש</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-slate-400 dark:text-[#9dabb9]" href="#">
+<div class="flex h-8 items-center justify-center">
+<span class="material-symbols-outlined">person</span>
+</div>
+<p class="text-xs font-medium leading-normal tracking-[0.015em]">פרופיל</p>
+</a>
+</div>
+</div>
+</body></html>
